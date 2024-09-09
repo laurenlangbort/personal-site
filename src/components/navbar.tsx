@@ -1,20 +1,36 @@
-import React from "react";
+import React from "react"; 
+import chillImage from '../assets/chill.png';
 import "./navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="nav navbar navbar-expand-lg ">
+    <nav className="nav navbar navbar-expand-md ">
       <a
         href="/"
-        className="float-start fw-semibold ps-4  Name-Right"
+        className="float-start fw-semibold ps-4 d-none d-md-block Name-Right"
         style={{
           color: "#27325c",
           fontFamily: "public-sans",
-          textDecoration: "none",
+          textDecoration: "none", 
+          fontSize: "40px",
         }}
       >
-        Lauren Langbort
-      </a>
+        Lauren Langbort 
+        <img src={chillImage} alt="" width="80" className="ps-2 align-items-center"/>
+      </a>  
+      <a
+        href="/"
+        className="float-start fw-semibold ps-4 d-block d-md-none Name-Right"
+        style={{
+          color: "#27325c",
+          fontFamily: "public-sans",
+          textDecoration: "none", 
+          fontSize: "40px",
+        }}
+      >
+        LCL
+        <img src={chillImage} alt="" width="80" className="ps-2 align-items-center"/>
+      </a> 
       <button
         className="navbar-toggler"
         type="button"
@@ -31,7 +47,7 @@ export default function Navbar() {
         id="navbarTogglerDemo02" 
         style={{ right: "0px"}}
       >
-        <ul className="list d-flex flex-row float-end">
+        <ul className="list d-flex flex-row float-end ms-auto">
           <li className="px-3" style={{ textDecoration: "none" }}>
             <a href="/about">About</a>
           </li>
