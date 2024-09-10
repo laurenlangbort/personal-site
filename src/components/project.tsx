@@ -14,7 +14,10 @@ export default function Project() {
       <div className="d-flex flex-row">
         <div className="container text-center">
           <div className="row row-cols-2">
-            <div className="col">Column</div>
+            <div className="col">
+                <p>DigsFact</p>
+
+            </div>
             <div className="col">Column</div>
             <div className="col">Column</div>
             <div className="col">Column</div>
