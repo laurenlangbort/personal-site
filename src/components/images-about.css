@@ -1,0 +1,37 @@
+.image {
+  width: 30vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.image {
+  width: 20vw !important;
+  height: auto !important;
+}
+
+.slider {
+  display: flex;
+  justify-content: center; 
+  position: relative; 
+  bottom: 100px;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%; /* Center the arrow vertically */
+  transform: translateY(-50%); /* Adjust to perfectly center */
+  font-size: 2rem; /* Adjust the size of the arrow */
+  cursor: pointer;
+  z-index: 10;
+  color: #000; /* Adjust color as needed */
+}
+
+.arrow-left {
+  left: -70px; /* Position on the left */
+}
+
+.arrow-right {
+  right: -70px; /* Position on the right */
+}

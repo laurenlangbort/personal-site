@@ -5,18 +5,21 @@ import { ImageSlider, SliderData } from './images-about';
 export default function About() {  
   return (
     <div
-      className="overflow-y-hidden"
+      className="overflow-y-hidden d-flex flex-row justify-content-center" 
+      id="about"
       style={{
         backgroundColor: "#e7e7e7",
         marginTop: "0",
         height: "90vh",
         fontFamily: "public-sans",
       }}
-    > 
-    <ImageSlider slides={SliderData} />
+    >  
+    <div>
+    <ImageSlider slides={SliderData} /> 
+    </div>
       <div
         className="text-center position-relative"
-        style={{ width: "50vw", left: "40vw", top: "100px" }}
+        style={{ width: "50vw", top: "100px", left: "100px" }}
       >
         <p
           className="pt-5 fw-bold"

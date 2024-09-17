@@ -7,7 +7,8 @@ import writing from '../assets/Writing.png';
 
 export default function Interest() {
   return (
-    <div
+    <div 
+      id="interest"
       style={{
         backgroundColor: "#e7e7e7",
         marginTop: "0",

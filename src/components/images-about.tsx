@@ -1,29 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState } from "react"; 
+import "./images-about.css"; 
+import pic1 from '../assets/picsForSite/pic1.JPG';  
+import pic2 from '../assets/picsForSite/pic2.png';   
+import pic3 from '../assets/picsForSite/pic3.JPG'; 
 
-// Define the type for each slide object
+
 type Slide = {
   image: string;
 };
 
-// Define the slider data
 export const SliderData: Slide[] = [
   {
-    image: 'https://images.unsplash.com/photo-1654683406260-26b02a22c1f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'
+    image: pic1,
   },
   {
-    image: 'https://images.unsplash.com/photo-1621543597540-e9be3740352b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80'
+    image: pic2,
   },
   {
-    image: 'https://images.unsplash.com/photo-1565450443120-ea90b0ca5117?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'
-  }
+    image: pic3,
+  },
 ];
 
-// Define the props type for ImageSlider
 type ImageSliderProps = {
   slides: Slide[];
 };
 
-// Export only ImageSlider
 export const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -37,12 +38,25 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
   };
 
   return (
-    <section className="slider">
-      <i className="arrow-left" onClick={prevSlide} />
-      <i className="arrow-right" onClick={nextSlide} />
+    <section className="slider"> 
+    <span className="arrow-left">
+        <i className="bi bi-arrow-left" onClick={prevSlide}></i> 
+        </span> 
+        <span className="arrow-right">
+        <i className="bi bi-arrow-right ps-5" onClick={nextSlide}></i> 
+        </span>
       {slides.map((slide, index) => (
-        <div className={index === current ? 'slide active' : 'slide'} key={index}>
-          {index === current && <img src={slide.image} alt={`Slide ${index + 1}`} className="image" />}
+        <div
+          className={index === current ? "slide active" : "slide"}
+          key={index}
+        >
+          {index === current && (
+            <img
+              src={slide.image}
+              alt={`Slide ${index + 1}`}
+              className="image"
+            />
+          )}
         </div>
       ))}
     </section>
