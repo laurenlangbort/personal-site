@@ -58,7 +58,7 @@ export default function Navbar() {
             <a href="#interest">Interests</a>
           </li>
           <li className="px-3" style={{ textDecoration: "none" }}>
-            <a href="/contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: public-sans;
+    src: url(../assets/Public_Sans/PublicSans-VariableFont_wght.ttf);
+  }
+
+.border-text {
+    border: 2px solid #27325c;  
+    border-radius: 10px;                  
+    display: inline-block; 
+} 
+
+.text {
+    color: #27325c;
+} 
+

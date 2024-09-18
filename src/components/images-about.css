@@ -22,20 +22,20 @@
 .arrow-left,
 .arrow-right {
   position: absolute;
-  top: 50%; /* Center the arrow vertically */
-  transform: translateY(-50%); /* Adjust to perfectly center */
-  font-size: 2rem; /* Adjust the size of the arrow */
+  top: 50%;
+  transform: translateY(-50%); 
+  font-size: 2rem; 
   cursor: pointer;
   z-index: 10;
-  color: #000; /* Adjust color as needed */
+  color: #000; 
 }
 
 .arrow-left {
-  left: -70px; /* Position on the left */
+  left: -70px; 
 }
 
 .arrow-right {
-  right: -70px; /* Position on the right */
+  right: -70px;
 } 
 
 .butterfly {
