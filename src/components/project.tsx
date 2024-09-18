@@ -8,7 +8,8 @@ import um from "../assets/picsForSite/UM.png";
 export default function Project() {
   return (
     <div
-      id="project"
+      id="project" 
+      className="pb-5"
       style={{
         backgroundColor: "#e7e7e7",
         marginTop: "0",
@@ -23,25 +24,25 @@ export default function Project() {
           Some of My Projects
         </p>
       </div>
-      <div className="">
+      <div className="pt-5">
         <div className="container text-center">
           <div className="row row-cols-1 row-cols-md-2">
             <div className="col mx-auto d-block">
               <img src={digs} alt="" className="shadow-lg circle-img" width="400" height="250" /> 
-              <p className="pt-3">DigsFact Website</p>
+              <p className="pt-3 fw-semibold font-size-20">DigsFact Website</p>
             </div>
             <div className="col mx-auto d-block"> 
             <img src={diagram} alt="" className="shadow-lg circle-img" width="400" height="250" />
-              <p className="pt-3">Madrid Metro System</p>
+              <p className="pt-3 fw-semibold font-size-20">Madrid Metro System</p>
             </div>
             <div className="col mx-auto d-block mt-0 mt-md-3"> 
             <img src={ft} alt="" className="shadow-lg circle-img" width="400" height="250" />
-              <p className="pt-3">Fruity Treasures</p>
+              <p className="pt-3 fw-semibold font-size-20">Fruity Treasures</p>
             </div>
             <div className="col mx-auto d-block mt-0 mt-md-3">
               {" "} 
               <img src={um} alt="" className="shadow-lg circle-img" width="400" height="250" />
-              <p className="pt-3">Universal Machine</p>
+              <p className="pt-3 fw-semibold font-size-20">Universal Machine</p>
             </div>
           </div>
         </div>
