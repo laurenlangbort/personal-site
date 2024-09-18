@@ -1,19 +1,22 @@
 import React from "react";
 import "./about.css"; 
-import { ImageSlider, SliderData } from './images-about';
+import { ImageSlider, SliderData } from './images-about'; 
+import puzzle from "../assets/puzzle.png"; 
+import butterfly from "../assets/butterfly.png";
 
 export default function About() {  
   return (
     <div
-      className="overflow-y-hidden d-flex flex-row justify-content-center" 
+      className="overflow-y-hidden" 
       id="about"
       style={{
         backgroundColor: "#e7e7e7",
         marginTop: "0",
-        height: "90vh",
+        height: "100vh",
         fontFamily: "public-sans",
       }}
-    >  
+    >   
+    <div className="d-flex flex-row justify-content-center">
     <div>
     <ImageSlider slides={SliderData} /> 
     </div>
@@ -36,8 +39,10 @@ export default function About() {
           that cater to people's diverse needs. By combining my technical skills
           with creativity and understanding of human experiences, I love finding
           innovative ways to bring ideas to life.
-        </p>
+        </p> 
+        <img src={puzzle} alt="" width="10" className="puzzle"/>
       </div>
+    </div>  
     </div>
   );
 }; 

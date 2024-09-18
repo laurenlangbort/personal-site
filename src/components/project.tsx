@@ -1,32 +1,48 @@
 import React from "react";
-import "./about.css";
+import "./project.css";
+import diagram from "../assets/picsForSite/erdiagram.png";
+import digs from "../assets/picsForSite/digsfact.png";
+import ft from "../assets/picsForSite/fruitytreasures.png";
+import um from "../assets/picsForSite/UM.png";
 
 export default function Project() {
   return (
-    <div 
+    <div
       id="project"
       style={{
         backgroundColor: "#e7e7e7",
         marginTop: "0",
-        height: "90vh",
         fontFamily: "public-sans",
       }}
-    > 
-    <div> 
-      <p className="ps-3 fw-semibold" style={{fontSize: "30px", color: "#340545"}}>Some of My Projects</p>
-    </div>
-      <div className="d-flex flex-row"> 
-        <div className="container text-center"> 
-          <div className="row row-cols-2">
-            <div className="col">
-                <p>DigsFact Website</p>
-
+    >
+      <div>
+        <p
+          className="ps-3 fw-semibold"
+          style={{ fontSize: "30px", color: "#340545",  paddingTop: "10vh",}}
+        >
+          Some of My Projects
+        </p>
+      </div>
+      <div className="">
+        <div className="container text-center">
+          <div className="row row-cols-1 row-cols-md-2">
+            <div className="col mx-auto d-block">
+              <img src={digs} alt="" className="shadow-lg circle-img" width="400" height="250" /> 
+              <p className="pt-3">DigsFact Website</p>
             </div>
-            <div className="col">
-              <p>Madrid Metro</p>
-              </div>
-            <div className="col">Column</div>
-            <div className="col">Column</div>
+            <div className="col mx-auto d-block"> 
+            <img src={diagram} alt="" className="shadow-lg circle-img" width="400" height="250" />
+              <p className="pt-3">Madrid Metro System</p>
+            </div>
+            <div className="col mx-auto d-block mt-0 mt-md-3"> 
+            <img src={ft} alt="" className="shadow-lg circle-img" width="400" height="250" />
+              <p className="pt-3">Fruity Treasures</p>
+            </div>
+            <div className="col mx-auto d-block mt-0 mt-md-3">
+              {" "} 
+              <img src={um} alt="" className="shadow-lg circle-img" width="400" height="250" />
+              <p className="pt-3">Universal Machine</p>
+            </div>
           </div>
         </div>
       </div>

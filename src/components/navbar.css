@@ -14,7 +14,7 @@
     flex-direction: row; 
     justify-content: space-between; 
     align-items: center; 
-    height: 50px; 
+    height: 70px; 
 }  
 
 a {
@@ -39,5 +39,5 @@ a {
 
 
 @media (max-width: 576px) {
-    
+
 }

@@ -1,9 +1,9 @@
-import React, { useState } from "react"; 
-import "./images-about.css"; 
-import pic1 from '../assets/picsForSite/pic1.JPG';  
-import pic2 from '../assets/picsForSite/pic2.png';   
-import pic3 from '../assets/picsForSite/pic3.JPG'; 
-
+import React, { useState } from "react";
+import "./images-about.css";
+import pic1 from "../assets/picsForSite/pic1.JPG";
+import pic2 from "../assets/picsForSite/pic2.png";
+import pic3 from "../assets/picsForSite/pic3.JPG"; 
+import butterfly from "../assets/butterfly.png";
 
 type Slide = {
   image: string;
@@ -38,13 +38,14 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
   };
 
   return (
-    <section className="slider"> 
-    <span className="arrow-left">
-        <i className="bi bi-arrow-left" onClick={prevSlide}></i> 
-        </span> 
-        <span className="arrow-right">
-        <i className="bi bi-arrow-right ps-5" onClick={nextSlide}></i> 
-        </span>
+    <section className="slider">
+      <span className="arrow-left">
+        <i className="bi bi-arrow-left" onClick={prevSlide}></i>
+      </span>
+      <span className="arrow-right">
+        <i className="bi bi-arrow-right ps-5" onClick={nextSlide}></i>
+      </span> 
+      <img src={butterfly} alt="" className="butterfly" />
       {slides.map((slide, index) => (
         <div
           className={index === current ? "slide active" : "slide"}

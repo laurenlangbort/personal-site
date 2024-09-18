@@ -9,4 +9,12 @@
     height: auto;
     display: block;
     margin: 0 auto;
+  } 
+
+  .puzzle {
+    position: relative; 
+    width: 500px; 
+    right: -100px; 
+    opacity: 0.75; 
+    top: 100px;
   }
