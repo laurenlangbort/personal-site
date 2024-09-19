@@ -34,7 +34,7 @@ export default function About() {
             <p className="text-center">Social Media</p> */}
             <div className="d-flex flex-row justify-content-center align-items-center pe-5"> 
             {/* <p className="border-text text px-2 py-1 fw-medium align-items-center mx-3">RESUME</p>  */}
-            <a target="_blank" rel="noopener noreferrer" className="align-items-center" href="https://github.com/laurenlangbort">
+            <a href="/LaurenLangbotResume.pdf" target="_blank" rel="noopener noreferrer" className="align-items-center">
                 <img src={resume} alt="" width="45" className="mx-3" />
               </a>
               <a target="_blank" rel="noopener noreferrer" className="align-items-center" href="https://github.com/laurenlangbort">
