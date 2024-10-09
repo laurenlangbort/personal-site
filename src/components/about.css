@@ -23,13 +23,21 @@
     width: 50vw;
      top: 100px;
       left: 100px; 
-} 
+}  
+
+@media (max-width: 992px) {
+  /* .position-para {
+    width: 50vw;
+     top: 0px;
+     left: 350px; 
+  } */
+}
 
 @media (max-width: 768px) { 
-    .position-para {
+    /* .position-para {
         width: 50vw;
          top: 0px;
-          left: 0px; 
-    } 
+        left: 350px; 
+    }  */
 
 }

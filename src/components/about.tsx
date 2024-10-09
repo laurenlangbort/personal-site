@@ -16,8 +16,8 @@ export default function About() {
         fontFamily: "public-sans",
       }}
     >
-      <div className="d-flex flex-row justify-content-center">
-        <div>
+      <div className="d-flex flex-column flex-lg-row justify-content-center">
+        <div className="d-none d-md-flex">
           <ImageSlider slides={SliderData} />
         </div>
         <div

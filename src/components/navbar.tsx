@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="nav navbar fixed-top navbar-expand-md ">
       <a
-        href="/about"
+        href="#about"
         className="float-start fw-semibold ps-4 d-none d-md-block Name-Right"
         style={{
           color: "#27325c",
@@ -19,7 +19,7 @@ export default function Navbar() {
         <img src={chillImage} alt="" width="80" className="ps-2 align-items-center"/>
       </a>  
       <a
-        href="/about"
+        href="#about"
         className="float-start fw-semibold ps-4 d-block d-md-none Name-Right"
         style={{
           color: "#27325c",
@@ -47,7 +47,7 @@ export default function Navbar() {
         id="navbarTogglerDemo02" 
         style={{ right: "0px"}}
       >
-        <ul className="list d-flex flex-row float-end ms-auto">
+        <ul className="list d-flex flex-column flex-md-row float-end ms-auto">
           <li className="px-3" style={{ textDecoration: "none" }}>
             <a href="#about">About</a>
           </li>

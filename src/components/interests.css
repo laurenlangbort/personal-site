@@ -10,13 +10,13 @@
     color: #c2bfc5;
 } 
 
-.slider {
+/* .slider {
     position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
   .image {
     width: 1000px;
