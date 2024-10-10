@@ -28,8 +28,20 @@
 @media (max-width: 768px) { 
     .position-para {
         width: 50vw;
-         top: 0px;
+         top: 100px;
           left: 0px; 
+    }  
+    .puzzle {
+      display: none;
     } 
+
+} 
+
+@media (max-width: 568px) { 
+  .position-para {
+      width: 80vw;
+       top: 100px;
+        left: 0px; 
+  }  
 
 }

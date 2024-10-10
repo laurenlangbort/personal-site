@@ -17,7 +17,7 @@ export default function About() {
       }}
     >
       <div className="d-flex flex-row justify-content-center">
-        <div>
+        <div className="d-none d-md-flex">
           <ImageSlider slides={SliderData} />
         </div>
         <div
