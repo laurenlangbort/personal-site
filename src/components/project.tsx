@@ -19,7 +19,7 @@ export default function Project() {
     >
       <div>
         <p
-          className="ps-3 fw-semibold"
+          className="d-flex justify-content-center justify-content-md-start mx-md-0 ps-0 ps-md-3 fw-semibold"
           style={{ fontSize: "30px", color: "#340545", paddingTop: "10vh" }}
         >
           Some of My Projects
@@ -39,7 +39,7 @@ export default function Project() {
                 <img
                   src={digs}
                   alt=""
-                  className="shadow-lg circle-img"
+                  className="shadow-lg circle-img img-fluid"
                   width="400"
                   height="250"
                 />
@@ -63,7 +63,7 @@ export default function Project() {
               <img
                 src={diagram}
                 alt=""
-                className="shadow-lg circle-img"
+                className="shadow-lg circle-img img-fluid"
                 width="400"
                 height="250"
               /> 
@@ -89,7 +89,7 @@ export default function Project() {
               <img
                 src={ft}
                 alt=""
-                className="shadow-lg circle-img"
+                className="shadow-lg circle-img img-fluid"
                 width="400"
                 height="250"
               /> 
@@ -110,7 +110,7 @@ export default function Project() {
               <img
                 src={um}
                 alt=""
-                className="shadow-lg circle-img"
+                className="shadow-lg circle-img img-fluid"
                 width="400"
                 height="250"
               /> 
